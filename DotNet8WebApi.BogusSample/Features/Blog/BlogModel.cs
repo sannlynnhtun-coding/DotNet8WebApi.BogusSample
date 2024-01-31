@@ -1,13 +1,13 @@
 ﻿using Bogus;
 
-public class Blog
+public class BlogModel
 {
     public string BlogId { get; set; } = Guid.NewGuid().ToString("N");
     public string Title { get; set; }
     public string Content { get; set; }
 }
 
-public class BlogFaker : Faker<Blog>
+public class BlogFaker : Faker<BlogModel>
 {
     public BlogFaker()
     {

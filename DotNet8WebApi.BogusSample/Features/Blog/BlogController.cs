@@ -8,7 +8,7 @@ namespace DotNet8WebApi.BogusSample.Features.Blog
     [Route("[controller]")]
     public class BlogController : Controller
     {
-        private readonly static List<Blog> _blogList = new List<Blog>();
+        private readonly static List<BlogModel> _blogList = new List<BlogModel>();
 
         [HttpPost(Name = "CreateBlog")]
         public IActionResult CreateBlog(int count)
