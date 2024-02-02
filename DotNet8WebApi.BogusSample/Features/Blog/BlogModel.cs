@@ -11,7 +11,6 @@ public class BlogFaker : Faker<BlogModel>
 {
     public BlogFaker()
     {
-        //RuleFor(o => o.BlogId, f => f.Random.Number(1, 100));
         RuleFor(o => o.Title, f => f.Lorem.Sentence(10));
         RuleFor(o => o.Content, f => f.Lorem.Word());
     }
